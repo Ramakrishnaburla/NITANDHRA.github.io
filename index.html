@@ -17,12 +17,13 @@
 
     /* HOLOGRAM BACKGROUND */
     .background {
-        background-image: url('hologram.jpg');
+        background-image: url('hologram.jpg');   /* Make sure file exists */
         background-repeat: no-repeat;
-        background-size: 420px;
+        background-size: 480px;                  /* Logo size */
         background-position: center;
-        opacity: 0.12; 
-        position: absolute;
+        opacity: 0.18;                           /* Watermark visibility */
+        filter: grayscale(70%);                  /* Hologram effect */
+        position: fixed;
         top: 0;
         left: 0;
         right: 0;
@@ -73,10 +74,12 @@
         margin-top: 12px;
         color: #222;
     }
+
     .value {
         color: #555;
         margin-bottom: 5px;
     }
+
     .footer {
         text-align: center;
         margin-top: 20px;
