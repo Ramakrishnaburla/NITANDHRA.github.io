@@ -8,18 +8,39 @@
 <style>
     body {
         font-family: Arial, sans-serif;
-        background: #f0f0f5;
         margin: 0;
         padding: 20px;
+        background: #f0f0f5;
+        position: relative;
+        overflow-x: hidden;
     }
+
+    /* HOLOGRAM BACKGROUND */
+    .background {
+        background-image: url('hologram.jpg');
+        background-repeat: no-repeat;
+        background-size: 420px;
+        background-position: center;
+        opacity: 0.12; 
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+    }
+
     .card {
         max-width: 450px;
         margin: auto;
-        background: white;
+        background: rgba(255, 255, 255, 0.93);
         padding: 25px;
         border-radius: 14px;
         box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        position: relative;
+        z-index: 2;
     }
+
     .header {
         text-align: center;
         background: #b30000;
@@ -36,6 +57,7 @@
         margin: 3px 0 0;
         font-size: 14px;
     }
+
     .photo {
         display: block;
         width: 150px;
@@ -45,6 +67,7 @@
         object-fit: cover;
         border: 2px solid #b30000;
     }
+
     .label {
         font-weight: bold;
         margin-top: 12px;
@@ -64,6 +87,8 @@
 </head>
 
 <body>
+
+<div class="background"></div>
 
 <div class="card">
 
